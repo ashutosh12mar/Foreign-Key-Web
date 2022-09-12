@@ -1,0 +1,5 @@
+create table courses(courseno int primary key,coursename varchar(100) )
+
+
+
+create table course_students(rollno int, courseno int references courses(courseno),studentname varchar(100),primary key(rollno,courseno))
