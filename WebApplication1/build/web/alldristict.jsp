@@ -18,7 +18,7 @@
         <center>
         <h1>All State</h1>
         <%
-        PreparedStatement ps=DbConnect.connect().prepareStatement("select * from State order by Statename");
+        PreparedStatement ps=DbConnect.connect().prepareStatement("select * from State order by Statename desc");
         ResultSet rs=ps.executeQuery();
         
         %>
@@ -37,7 +37,7 @@
                 }
             %>
             </center>
-        </table>>
+        </table>
 
             
     </body>
